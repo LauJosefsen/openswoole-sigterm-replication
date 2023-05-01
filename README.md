@@ -1,7 +1,7 @@
 # openswoole-sigterm-replication
 
 1. docker compose up --build
-2. Start a jmeter test to localhost:9501 with 4 workers, set the threads to stop after receiving an error (to avoid connection refused spam)
+2. Start a jmeter test to localhost:9501, either by using test.jmx, or create one yourself with 4 workers, set the threads to stop after receiving an error (to avoid connection refused spam)
 3. CTRL-C the docker compose up command.
 4.  observe 4 requests having this error in jMeter:
 
